@@ -1,7 +1,8 @@
 # github_workflow
 A place for me to keep notes on how to use github
 
-## Styling this ReadMe file https://help.github.com/articles/basic-writing-and-formatting-syntax/
+## Styling this ReadMe file 
+https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 ## Scenario 1: I have a project on github, and I want to keep working on my project from a computer.
 > From your local computer's terminal
