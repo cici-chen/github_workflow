@@ -1,8 +1,26 @@
-# github_workflow
+# Github Workflow
 A place for me to keep notes on how to use github
 
 ## Styling this ReadMe file 
 https://help.github.com/articles/basic-writing-and-formatting-syntax/
+
+## Before I start pushing things up to a remote repo. 
+In local terminal, `git config user.name` to check if user name is yours. If not, `git config user.name cici-chen` and `git config user.email blahbla@balh.com` (must set both!) to set correct username. Then `git config user.name` to double check.  
+
+## When you're ready to push things up, to spare yourself from typing password a million times
+From your local terminal, make sure you're in the repo:
+`git config credential.helper 'cache --timeout=300'`
+(300 seconds = 5 mins. 10800 seconds = 3 hours)
+`git push`
+`Username: <type your username>`
+`Password: <type your password>`
+
+[work for 5 more minutes]
+$ git push http://example.com/repo.git
+[your credentials are used automatically]
+You can provide options via the credential.helper configuration variable (this example drops the cache time to 5 minutes):
+
+$ git config credential.helper 'cache --timeout=300'
 
 ## Scenario 1: I have a project on github, and I want to keep working on my project from a computer.
 > From your local computer's terminal
