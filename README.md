@@ -41,3 +41,6 @@ Compare local form branch to remote form branch
 ```
 git diff form origin/form
 ```
+
+### After you fix a merge conflict
+You need to add and commit for the merge to finish
