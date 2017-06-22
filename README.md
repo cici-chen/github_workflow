@@ -6,6 +6,8 @@ A place for me to keep notes on how to use github
 ### What is a commit anyway?
 Saved changes are called commits.
 
+
+
 ### How does a merge conflict occur?
 If two people made changes on the same line, for exmaple if one person wrote console.log('apple') and the other wrote console.log('banana') then github wouldn't know which version to use in the merged file. So in the file, it will look like
 ```
@@ -16,6 +18,13 @@ If two people made changes on the same line, for exmaple if one person wrote con
  >>>>>>> [other/branch/name]".
 ```
 Now to resolve the conflict, it's not necessarily an either or scenario. Just delete all the syntax things, and leave whatever you want the final version to be in this branch. It could be that you don't want either, and so on.
+After editing, you need to tell git that you've resolved the conflict by saving your edits. `git add .`
+
+It might be a good idea to use a gitmerge tool instead of resolving it in the file editor, which can be clumsy.
+
+### You fucked up a merge edit and want to just reset things to before the merge
+ "git merge --abort" 
+ "git reset --hard "
 
 ### No merge conflict != no probmen!!!
 Why?
